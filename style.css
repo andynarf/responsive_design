@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+.blacknav {
+  background-color: black;
+  height: 50px;
+}
+
+.whitenav {
+  background-color: lightblue;
+  height: 50px;
+}
+
+.top-section {
+  display: flex;
+  height: 500px;
+}
+
+.mario {
+  width: 66%;
+  background-color: lightcoral;
+}
+
+.wrapper {
+  width: 34%;
+  background-color: lightgreen;
+}
+
+.wrapper :nth-of-type(1) {
+  height: 50%;
+  background-color: lightgray;
+}
+
+.wrapper :nth-of-type(2) {
+  height: 50%;
+  background-color: lightpink;
+}
+
+.latestnews {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 80%;
+  height: 400px;
+  background-color: lightgreen;
+}
+
+.latestnews h2 {
+  display: flex;
+  height: 50px;
+  background-color: lightyellow;
+}
+
+.latestnewsarticles {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.latestnewsarticles article {
+  width: 33.3333%;
+  height: 50%;
+  border: 2px solid black;
+}
+
+.latestfundings {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 80%;
+  height: 400px;
+  background-color: lightseagreen;
+}
+
+.titleslatestfundings {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightcyan;
+  height: 30px;
+}
+
+.titleslatestfundings .title {
+  display: flex;
+  width: 40%;
+  background-color: lightsalmon;
+}
+
+.titleslatestfundings .list {
+  width: 40%;
+  background-color: red;
+  display: flex;
+}
+
+.articleslatestfundings {
+  display: flex;
+  justify-content: space-between;
+  height: 370px;
+}
+
+.articleslatestfundings article {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.artsgearandtech {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  width: 80%;
+  height: 1500px;
+  margin: auto;
+}
+
+.artsgearandtech section {
+  width: 33.3333%;
+  border: 2px solid black;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  height: 300px;
+}
