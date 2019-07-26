@@ -4,12 +4,46 @@
 
 .blacknav {
   background-color: black;
-  height: 50px;
+  height: 32px;
+}
+.blacknavlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  width: 25%;
+  height: 32px;
+}
+
+.first {
+  color: white !important;
+}
+
+.blacknavlist a {
+  font-size:13px;
+  color:gray;
+  text-decoration: none;
 }
 
 .whitenav {
-  background-color: lightblue;
-  height: 50px;
+  background-color: #fff;
+  height: 48px;
+}
+
+.whitenavlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  width: 35%;
+  height: 48px;
+}
+
+.whitenavlist a {
+  font-size:13px;
+  font-weight: 500;
+  color:#aaaaaa;
+  text-decoration: none;
 }
 
 .top-section {
