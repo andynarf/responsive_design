@@ -54,7 +54,46 @@
 
 .mario {
   width: 66%;
+  display: flex;
+  align-items: flex-end;
   background-color: lightcoral;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/tiktok-796x419.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cover-transparent {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  background-image: linear-gradient(170deg,#ee3e07,transparent 50%, black 80%);
+}
+
+.cover-title {
+  padding: 15px;
+
+}
+
+.cover-title a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cover-title h5 {
+  text-transform: uppercase;
+}
+
+.cover-big-title a {
+  font-size: 56px;
+}
+
+.cover-byline {
+  color: hsla(0,0%,100%,.6);
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+
 }
 
 .wrapper {
@@ -62,13 +101,13 @@
   background-color: lightgreen;
 }
 
-.wrapper :nth-of-type(1) {
+.first-wrapper {
   height: 50%;
   width: 100%;
   background-color: lightgray;
 }
 
-.wrapper :nth-of-type(2) {
+.second-wrapper {
   height: 50%;
   width: 100%;
   background-color: lightpink;
