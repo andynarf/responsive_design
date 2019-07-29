@@ -6,6 +6,7 @@
   background-color: black;
   height: 32px;
 }
+
 .blacknavlist {
   display: flex;
   justify-content: space-between;
@@ -20,8 +21,8 @@
 }
 
 .blacknavlist a {
-  font-size:13px;
-  color:gray;
+  font-size: 13px;
+  color: gray;
   text-decoration: none;
 }
 
@@ -40,9 +41,9 @@
 }
 
 .whitenavlist a {
-  font-size:13px;
+  font-size: 13px;
   font-weight: 500;
-  color:#aaaaaa;
+  color: #aaa;
   text-decoration: none;
 }
 
@@ -63,11 +64,13 @@
 
 .wrapper :nth-of-type(1) {
   height: 50%;
+  width: 100%;
   background-color: lightgray;
 }
 
 .wrapper :nth-of-type(2) {
   height: 50%;
+  width: 100%;
   background-color: lightpink;
 }
 
@@ -163,8 +166,22 @@ footer {
 }
 
 @media (max-width: 768px) {
+  * {
+    max-width: 768px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   .blacknav {
-    height: 0;
+    display: none;
+  }
+
+  .whitenavlist {
+    width: 100%;
+  }
+
+  .whitenavlist a {
+    display: none;
   }
 
   .top-section {
