@@ -103,15 +103,14 @@
 
 .wrapper {
   width: 33.5%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: lightgreen;
 }
 
 .first-wrapper {
   height: 49%;
-  align-self: center
+  align-self: center;
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -145,14 +144,49 @@
   width: 80%;
   min-width: 1024px;
   height: 700px;
-  background-color: lightgreen;
 }
 
 .latestnews h2 {
   display: flex;
-  align-items: flex-end;  
+  align-items: flex-end;
   height: 200px;
-  background-color: lightyellow;
+  padding-bottom: 20px;
+}
+
+.story-latest-news {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.latestnewsarticles-list-item {
+  height: 280px;
+}
+
+.story-img {
+  height: 150px;
+  width: 260px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Snag_18708c45-511x270.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.story-title a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.story-date a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .u-row {
@@ -163,8 +197,7 @@
 
 .u-row li {
   width: 25%;
-  height:300px;
-  border: 2px solid black;
+  height: 300px;
 }
 
 .latestfundings {
@@ -174,7 +207,6 @@
   width: 80%;
   min-width: 1024px;
   height: 400px;
-  background-color: lightseagreen;
 }
 
 .titleslatestfundings {
@@ -202,11 +234,32 @@
   height: 370px;
 }
 
-.articleslatestfundings article {
+.articleslatestfundings div {
   display: flex;
   width: 25%;
   height: 100%;
   border: 2px solid black;
+}
+
+.latestfundings-item {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+}
+
+.lf-budget {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+}
+
+.lf-budget h3 {
+  width: 100%;
+}
+
+.lf-budget h5 {
+  width: 100%;
 }
 
 .artsgearandtech {
@@ -230,12 +283,12 @@ footer {
   height: 300px;
 }
 
-.latestnews h2 a{
+.latestnews h2 a {
   font-size: 28px;
   color: #f42;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   font-weight: bold;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -279,10 +332,14 @@ footer {
     height: 1000px;
   }
 
-  .latestnewsarticles article {
+  .latestnewsarticles {
+    min-width: 480px;
+  }
+
+  /* .latestnewsarticles article {
     width: 100%;
     height: 12.5%;
-  }
+  } */
 
   .latestfundings {
     flex-direction: column;
@@ -296,11 +353,45 @@ footer {
     display: flex;
     height: 200px;
     background-color: lightyellow;
-    display:flex;
+    display: flex;
     align-items: flex-end;
   }
 
+  .u-row li {
+    width: 100%;
+    /* height:300px; */
+  }
 
+  .story-latest-news {
+    flex-direction: row;
+    height: 100px;
+  }
+
+  .latestnewsarticles-list-item {
+    height: 100px !important;
+    margin: 10px;
+  }
+
+  .story-img {
+    height: 100px !important;
+    width: 200px !important;
+  }
+
+  .story-title-tag {
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+  }
+
+  .story-title a {
+    font-size: 15px;
+  }
+
+  .story-date a {
+    font-size: 14px;
+  }
 
   .titleslatestfundings {
     display: flex;
