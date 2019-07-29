@@ -86,6 +86,7 @@
 
 .cover-big-title a {
   font-size: 56px;
+  font-weight: bold;
 }
 
 .cover-byline {
@@ -104,6 +105,8 @@
 .first-wrapper {
   height: 50%;
   width: 100%;
+  display: flex;
+  align-items: flex-end;
   background-color: lightgray;
 }
 
@@ -111,6 +114,11 @@
   height: 50%;
   width: 100%;
   background-color: lightpink;
+}
+
+.cover-wrapper-title a {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .latestnews {
