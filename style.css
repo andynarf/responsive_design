@@ -27,6 +27,7 @@
 }
 
 .whitenav {
+  display: none;
   background-color: #fff;
   height: 48px;
 }
@@ -667,17 +668,45 @@ footer {
     min-width: 480px;
   }
 
-  /* .latestnewsarticles article {
-    width: 100%;
-    height: 12.5%;
-  } */
+  .articlewrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   .latestfundings {
     flex-direction: column;
     width: 100%;
     min-width: 0;
-    height: 1600px;
-    background-color: lightseagreen;
+    height: 100%;
+  }
+  .latestfundings-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .titleslatestfundings ul {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    color: #f42;
+    font-family: Avalon, sans-serif;
+    text-decoration: none;
+  }
+  .titleslatestfundings li {
+    margin-left: 10px;
+  }
+  
+  .titleslatestfundings ul :nth-of-type(1) {
+    border-right: none;
+    padding-right: 0px;
+  }
+  
+  .titleslatestfundings ul :nth-of-type(2) {
+    border-right: none;
+    padding-right: 0px;
   }
 
   .latestnews h2 {
@@ -693,6 +722,7 @@ footer {
     /* height:300px; */
   }
 
+  
   .story-latest-news {
     flex-direction: row;
     height: 100px;
@@ -727,7 +757,7 @@ footer {
   .titleslatestfundings {
     display: flex;
     flex-direction: column;
-    background-color: lightcyan;
+    background-color:white;
     height: 300px;
   }
 
@@ -739,10 +769,15 @@ footer {
 
   .titleslatestfundings .list {
     width: 100%;
-    background-color: red;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items:flex-start;
+    justify-content: space-around;
     height: 150px;
+  }
+  .titleslatestfundings {
+    flex-direction: column;
+    justify-content: center;
   }
 
   .articleslatestfundings {
@@ -759,13 +794,16 @@ footer {
 
   .artsgearandtech {
     width: 100%;
+    height: 5000px;
     min-width: 0;
-    height: 4500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .artsgearandtech section {
     width: 100%;
-  }
+      }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -774,7 +812,7 @@ footer {
     min-width: 768px;
   }
 
-  .latestfundings {
+  /* .latestfundings {
     width: 100%;
     min-width: 768px;
   }
@@ -799,4 +837,4 @@ footer {
   .artsgearandtech section {
     width: 50%;
   }
-}
+} */
