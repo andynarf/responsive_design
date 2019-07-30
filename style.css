@@ -354,7 +354,6 @@
 .artsgearandtech {
   display: flex;
   flex-wrap: wrap;
-  background-color: lightblue;
   width: 80%;
   min-width: 1024px;
   height: 1500px;
@@ -365,6 +364,51 @@
   width: 33.3333%;
   border: 2px solid black;
 }
+
+.apps {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
+}
+
+.apps h2 {
+  color: #f34120;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.art-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 290px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.art-img-wrapper-text {
+  padding-left: 15px;
+}
+
+.art-img-wrapper-text a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.art-img-wrapper-text h2 {
+  font-size: 18px;
+}
+
+.art-img-wrapper-text h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 
 footer {
   background-color: black;
