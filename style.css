@@ -118,7 +118,6 @@
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/200-calories-796x417.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: lightgray;
 }
 
 .second-wrapper {
@@ -206,13 +205,50 @@
   flex-direction: column;
   width: 80%;
   min-width: 1024px;
-  height: 400px;
+  height: 350px;
+}
+
+.titleslatestfundings h2 {
+  font-size: 28px;
+  color: #f42;
+  font-family: Avalon, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.titleslatestfundings ul {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+  color: #f42;
+  font-family: Avalon, sans-serif;
+  text-decoration: none;
+}
+
+.titleslatestfundings li {
+  margin-left: 10px;
+}
+
+.titleslatestfundings ul :nth-of-type(1) {
+  border-right: 1px solid #f42;
+  padding-right: 10px;
+}
+
+.titleslatestfundings ul :nth-of-type(2) {
+  border-right: 1px solid #f42;
+  padding-right: 10px;
+}
+
+.articlewrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .titleslatestfundings {
   display: flex;
   justify-content: space-between;
-  background-color: lightcyan;
   height: 30px;
 }
 
@@ -222,44 +258,97 @@
   background-color: lightsalmon;
 }
 
-.titleslatestfundings .list {
-  width: 40%;
-  background-color: red;
-  display: flex;
-}
-
 .articleslatestfundings {
   display: flex;
   justify-content: space-between;
-  height: 370px;
-}
-
-.articleslatestfundings div {
-  display: flex;
-  width: 25%;
-  height: 100%;
-  border: 2px solid black;
+  height: 280px;
 }
 
 .latestfundings-item {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 256px;
+}
+
+.latestfundings-item img {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.lf-title {
+  color: white;
+  background-color: #ff4232;
+  height: 40px;
+  padding-top: 20px;
+  padding-left: 100px;
 }
 
 .lf-budget {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 80px;
+  background-color: #ffebe7;
+  padding-left: 100px;
+  padding-top: 15px;
+  height: 60px;
 }
 
 .lf-budget h3 {
-  width: 100%;
+  font-weight: bold;
 }
 
 .lf-budget h5 {
-  width: 100%;
+  color: #807674;
+}
+
+.lf-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fffaf8;
+  height: 70px;
+  border-bottom: solid 1px #ffcdc2;
+  padding-left: 15px;
+  color: #555;
+}
+
+.lf-info h6 {
+  padding-left: 10px;
+}
+
+.lf-info div {
+  display: flex;
+}
+
+.lf-footer {
+  font-size: 14px;
+  color: #555;
+  padding-left: 15px;
+  padding-top: 15px;
+  background-color: #fffaf8;
+  height: 70px;
+}
+
+.icon {
+  display: block;
+  background: transparent
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+    no-repeat;
+  background-size: 1296px 1296px;
+  background-position: 1296px 1296px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon--tag--dark {
+  background-position: -976px -976px;
+}
+
+.icon--briefcase--dark {
+  background-position: -48px -48px;
 }
 
 .artsgearandtech {
@@ -350,7 +439,6 @@ footer {
   }
 
   .latestnews h2 {
-    display: flex;
     height: 200px;
     background-color: lightyellow;
     display: flex;
@@ -359,6 +447,7 @@ footer {
 
   .u-row li {
     width: 100%;
+
     /* height:300px; */
   }
 
