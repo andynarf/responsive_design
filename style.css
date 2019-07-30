@@ -356,18 +356,18 @@
   flex-wrap: wrap;
   width: 80%;
   min-width: 1024px;
-  height: 3000px;
+  height: 2150px;
   margin: auto;
 }
 
 .artsgearandtech section {
   width: 31%;
-  padding:20px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
 .apps {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 330px;
@@ -388,7 +388,6 @@
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Android--368x276.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 .gradient {
@@ -396,10 +395,7 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 290px;
-  background-image: linear-gradient(
-  170deg,
-  transparent 50%,
-  black 80%);
+  background-image: linear-gradient(170deg, transparent 50%, black 80%);
 }
 
 .art-img-wrapper-text {
@@ -423,39 +419,201 @@
 }
 
 .latest {
-  padding-top:10px;
   padding-bottom: 20px;
   background-color: #fff4f2;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
 }
 
 .latest h5 {
+
   text-transform: uppercase;
   color: #ff4422;
   font-size: 12px;
-  padding-bottom:5px;
+  padding-top:10px;
+  padding-bottom: 10px;
 }
 
 .latest a {
   text-decoration: none;
   color: #ff4422;
   font-weight: bold;
+  font-size:14px;
 }
 
-.list-section{
-  list-style: 
+.latest-title {
+  height: 75px;
 }
 
-.list-section li {
+.latest img {
+  padding-top:2px;
+  height: 88px;
+  width: 90px;
+}
+
+.list-section {
+  list-style: none;
   display: flex;
+  flex-direction: column;
 }
 
+.list-section li::before {
+  content: "\2022";
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: flex; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.list-section a {
+  color: #595959;
+  text-decoration: none;
+  font-size:14px;
+  line-height: 1;
+  text-align: justify;
+}
+
+.list-section :hover {
+  color:black;
+}
+
+.section-headline {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px #f2f2f2 solid;
+}
 
 footer {
   background-color: black;
   display: flex;
+  flex-direction: column;
   height: 300px;
 }
 
+.footer-wrapper {
+  background-color: #131313;
+  height:200px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height:100px;
+  margin: auto;
+}
+
+.footer-links a {
+  color:grey;
+  text-decoration: none;
+}
+
+.footer-links-social {
+  display: flex;
+  width:360px;
+  justify-content: space-between;
+}
+
+.footer-links-menu {
+  display: flex;
+  width:300px;
+  margin-top:30px;
+  text-transform: uppercase;
+  font-size:12px;
+  justify-content: space-between;
+}
+
+.footer-legal {
+  display: flex;
+  display:300px;
+  height:50px;
+  margin:auto;
+  width:600px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-legal img {
+  padding-top:4px;
+  height: 14px;
+  width:40px;
+
+}
+
+.footer-legal span {
+  color:grey;
+  text-decoration: none;
+}
+
+.footer-links-social a {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height:40px;
+  width:40px;
+  border: 2px solid #333;
+  background-color: #333;
+}
+
+.footer-links-social a:hover {
+  background-color: black;
+}
+
+.footer-links-social i {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783");
+  background-size: 1296px 1296px;
+
+}
+
+.icon--facebook--light {
+  height: 16px;
+  width: 16px;
+  background-position: -272px -272px;
+}
+
+.icon--twitter--light {
+  height: 16px;
+  width: 16px;
+  background-position: -1024px -1024px;
+}
+
+.icon--youtube--light {
+  height: 16px;
+  width: 16px;
+  background-position: -1280px -1280px;
+}
+
+.icon--instagram--light {
+  height: 16px;
+  width: 16px;
+  background-position: -416px -416px;
+}
+
+.icon--pinterest--light {
+  height: 16px;
+  width: 16px;
+  background-position: -672px -672px;
+}
+
+.icon--rss--light {
+  height: 16px;
+  width: 16px;
+  background-position: -816px -816px;
+}
+
+.icon--mail--light {
+  height: 16px;
+  width: 16px;
+  background-position: -576px -576px;
+}
 .latestnews h2 a {
   font-size: 28px;
   color: #f42;
