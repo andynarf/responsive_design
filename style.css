@@ -5,6 +5,10 @@
 .blacknav {
   background-color: black;
   height: 32px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .blacknavlist {
@@ -27,9 +31,14 @@
 }
 
 .whitenav {
-  display: none;
+  display: flex;
+  align-items: center;
   background-color: #fff;
   height: 48px;
+  overflow: hidden;
+  position: fixed;
+  top: 32px;
+  width: 100%;
 }
 
 .whitenavlist {
@@ -48,6 +57,29 @@
   text-decoration: none;
 }
 
+.search-wrapper {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid grey;
+}
+
+.hamburger {
+  display: none;
+}
+
+#search--open {
+  height: 16px;
+  width: 16px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg");
+  background-size: 1296px 1296px;
+  background-position: -848px -848px;
+}
+
 .top-section {
   display: flex;
   justify-content: space-between;
@@ -61,19 +93,20 @@
   background-color: lightcoral;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/tiktok-796x419.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .cover-transparent {
   display: flex;
   align-items: flex-end;
   height: 100%;
-  background-image: linear-gradient(
-    170deg,
-    #ee3e07,
-    transparent 50%,
-    black 80%
-  );
+  background-image:
+    linear-gradient(
+      170deg,
+      #ee3e07,
+      transparent 50%,
+      black 80%
+    );
 }
 
 .cover-title {
@@ -232,6 +265,10 @@
   margin-left: 10px;
 }
 
+.list-section :hover {
+  color: black;
+}
+
 .titleslatestfundings ul :nth-of-type(1) {
   border-right: 1px solid #f42;
   padding-right: 10px;
@@ -335,9 +372,10 @@
 
 .icon {
   display: block;
-  background: transparent
+  background:
+    transparent
     url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    no-repeat;
+      no-repeat;
   background-size: 1296px 1296px;
   background-position: 1296px 1296px;
   width: 16px;
@@ -363,8 +401,8 @@
 
 .artsgearandtech section {
   width: 31%;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .apps {
@@ -409,10 +447,6 @@
   font-weight: bold;
 }
 
-.cover-wrapper-title a {
-  font-size: 22px;
-}
-
 .art-img-wrapper-text h5 {
   text-transform: uppercase;
   font-size: 15px;
@@ -428,19 +462,18 @@
 }
 
 .latest h5 {
-
   text-transform: uppercase;
-  color: #ff4422;
+  color: #f42;
   font-size: 12px;
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .latest a {
   text-decoration: none;
-  color: #ff4422;
+  color: #f42;
   font-weight: bold;
-  font-size:14px;
+  font-size: 14px;
 }
 
 .latest-title {
@@ -448,7 +481,7 @@
 }
 
 .latest img {
-  padding-top:2px;
+  padding-top: 2px;
   height: 88px;
   width: 90px;
 }
@@ -470,13 +503,9 @@
 .list-section a {
   color: #595959;
   text-decoration: none;
-  font-size:14px;
+  font-size: 14px;
   line-height: 1;
   text-align: justify;
-}
-
-.list-section :hover {
-  color:black;
 }
 
 .section-headline {
@@ -496,7 +525,7 @@ footer {
 
 .footer-wrapper {
   background-color: #131313;
-  height:200px;
+  height: 200px;
   display: flex;
   align-items: center;
 }
@@ -507,61 +536,67 @@ footer {
   align-items: center;
   justify-content: center;
   width: 400px;
-  height:100px;
+  height: 100px;
   margin: auto;
 }
 
 .footer-links a {
-  color:grey;
+  color: grey;
   text-decoration: none;
 }
 
 .footer-links-social {
   display: flex;
-  width:360px;
+  width: 360px;
   justify-content: space-between;
 }
 
 .footer-links-menu {
   display: flex;
-  width:300px;
-  margin-top:30px;
+  width: 300px;
+  margin-top: 30px;
   text-transform: uppercase;
-  font-size:12px;
+  font-size: 12px;
   justify-content: space-between;
 }
 
 .footer-legal {
   display: flex;
-  display:300px;
-  height:50px;
-  margin:auto;
-  width:600px;
+  height: 50px;
+  margin: auto;
+  width: 600px;
   justify-content: space-between;
   align-items: baseline;
 }
 
 .footer-legal img {
-  padding-top:4px;
+  padding-top: 4px;
   height: 14px;
-  width:40px;
-
+  width: 40px;
 }
 
 .footer-legal span {
-  color:grey;
+  color: grey;
   text-decoration: none;
 }
 
 .footer-links-social a {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  height:40px;
-  width:40px;
+  height: 40px;
+  width: 40px;
   border: 2px solid #333;
   background-color: #333;
+}
+
+.latestnews h2 a {
+  font-size: 28px;
+  color: #f42;
+  font-family: Avalon, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .footer-links-social a:hover {
@@ -571,7 +606,6 @@ footer {
 .footer-links-social i {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783");
   background-size: 1296px 1296px;
-
 }
 
 .icon--facebook--light {
@@ -615,13 +649,6 @@ footer {
   width: 16px;
   background-position: -576px -576px;
 }
-.latestnews h2 a {
-  font-size: 28px;
-  color: #f42;
-  font-family: Avalon, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-}
 
 @media (max-width: 768px) {
   * {
@@ -634,12 +661,40 @@ footer {
     display: none;
   }
 
-  .whitenavlist {
+  .whitenav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
     width: 100%;
   }
 
-  .whitenavlist a {
+  .whitenavlist {
+    width: 300px;
+  }
+
+  .whitenavlist li {
     display: none;
+  }
+
+  .search-wrapper {
+    position: absolute;
+    right: 60px;
+  }
+
+  .hamburger {
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid grey;
+  }
+
+  .hamburger img {
+    height: 16px;
+    width: 16px;
   }
 
   .top-section {
@@ -655,6 +710,12 @@ footer {
   .mario {
     width: 100%;
     height: 30%;
+    background-size: cover;
+  }
+
+  .cover-big-title a {
+    font-size: 22px;
+    font-weight: bold;
   }
 
   .latestnews {
@@ -679,12 +740,14 @@ footer {
     min-width: 0;
     height: 100%;
   }
+
   .latestfundings-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
   }
+
   .titleslatestfundings ul {
     width: 40%;
     display: flex;
@@ -695,23 +758,23 @@ footer {
     font-family: Avalon, sans-serif;
     text-decoration: none;
   }
+
   .titleslatestfundings li {
     margin-left: 10px;
   }
-  
+
   .titleslatestfundings ul :nth-of-type(1) {
     border-right: none;
-    padding-right: 0px;
+    padding-right: 0;
   }
-  
+
   .titleslatestfundings ul :nth-of-type(2) {
     border-right: none;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .latestnews h2 {
     height: 200px;
-    background-color: lightyellow;
     display: flex;
     align-items: flex-end;
   }
@@ -722,7 +785,6 @@ footer {
     /* height:300px; */
   }
 
-  
   .story-latest-news {
     flex-direction: row;
     height: 100px;
@@ -757,7 +819,8 @@ footer {
   .titleslatestfundings {
     display: flex;
     flex-direction: column;
-    background-color:white;
+    justify-content: center;
+    background-color: white;
     height: 300px;
   }
 
@@ -771,13 +834,9 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: space-around;
     height: 150px;
-  }
-  .titleslatestfundings {
-    flex-direction: column;
-    justify-content: center;
   }
 
   .articleslatestfundings {
@@ -794,47 +853,84 @@ footer {
 
   .artsgearandtech {
     width: 100%;
-    height: 5000px;
+    height: 4500px;
     min-width: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 
   .artsgearandtech section {
     width: 100%;
-      }
+    height: 12.5%;
+  }
+
+  #latest-deals {
+    margin-top: 30px;
+  }
+
+  .footer-legal {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
+  .blacknav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .whitenav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .latestnews {
     width: 100%;
     min-width: 768px;
   }
 
-  /* .latestfundings {
+  .latestfundings {
     width: 100%;
     min-width: 768px;
-  }
-
-  .titleslatestfundings {
-    flex-direction: column;
   }
 
   .articleslatestfundings article {
     width: 33.33%;
   }
 
-  .articleslatestfundings :last-child {
-    width: 0%;
+  .articlewrapper {
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  #final {
+    display: none;
+  }
+
+  .story-img {
+    width: 220px;
+    min-width: 0;
   }
 
   .artsgearandtech {
-    width: 100%;
+    width: 98%;
     min-width: 768px;
+    height: 2700px;
+    margin: auto;
+    justify-content: space-around;
   }
 
   .artsgearandtech section {
     width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
   }
-} */
+}
