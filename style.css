@@ -399,7 +399,7 @@
   margin: auto;
 }
 
-.artsgearandtech section {
+.artsgearandtech article {
   width: 31%;
   padding: 10px;
   margin-bottom: 10px;
@@ -662,14 +662,35 @@ footer {
   }
 
   .whitenav {
+    display: flex;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    min-width: 0;
     width: 100%;
+    top: 0;
+  }
+
+  .logo-container {
+    background-image:
+      linear-gradient(
+        170deg,
+        #d00591,
+        #f42
+      );
+    width: 100px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-container img {
+    width: 60px;
+    height: 60px;
   }
 
   .whitenavlist {
-    width: 300px;
+    width: 200px;
   }
 
   .whitenavlist li {
@@ -853,14 +874,15 @@ footer {
 
   .artsgearandtech {
     width: 100%;
-    height: 4500px;
+    flex-wrap: nowrap;
+    height: 5200px;
     min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 
-  .artsgearandtech section {
+  .artsgearandtech article {
     width: 100%;
     height: 12.5%;
   }
@@ -892,14 +914,59 @@ footer {
     width: 100%;
   }
 
+  .logo-container {
+    background-image:
+      linear-gradient(
+        170deg,
+        #d00591,
+        #f42
+      );
+    width: 100px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-container img {
+    width: 60px;
+    height: 60px;
+  }
+
   .latestnews {
     width: 100%;
     min-width: 768px;
+    height: 1000px;
+  }
+
+  .story-title a {
+    font-size: 16px;
   }
 
   .latestfundings {
     width: 100%;
     min-width: 768px;
+  }
+
+  .u-row li {
+    width: 33%;
+    height: 300px;
+  }
+
+  .titleslatestfundings {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .titleslatestfundings h2 {
+    padding-left: 15px;
+  }
+
+  .titleslatestfundings ul {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 5px;
   }
 
   .articleslatestfundings article {
@@ -908,10 +975,11 @@ footer {
 
   .articlewrapper {
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
+    min-width: 800px;
   }
 
-  #final {
+  .final {
     display: none;
   }
 
@@ -928,7 +996,7 @@ footer {
     justify-content: space-around;
   }
 
-  .artsgearandtech section {
+  .artsgearandtech article {
     width: 50%;
     padding: 20px;
     margin-bottom: 20px;
