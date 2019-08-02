@@ -5,4 +5,4 @@ This project consists of building a responsive website cloning The Next Web, a t
 Carlos Andres Rodriguez https://github.com/andynarf Andres Felipe Moya https://github.com/AndresFMoya
 
 # The Website
-Follow this link to access the website:
+Follow this link to access the website::
