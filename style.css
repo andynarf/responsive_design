@@ -177,6 +177,7 @@
   width: 80%;
   min-width: 1024px;
   height: 700px;
+  overflow: hidden;
 }
 
 .latestnews h2 {
@@ -375,7 +376,7 @@
   background:
     transparent
     url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-      no-repeat;
+    no-repeat;
   background-size: 1296px 1296px;
   background-position: 1296px 1296px;
   width: 16px;
@@ -671,12 +672,7 @@ footer {
   }
 
   .logo-container {
-    background-image:
-      linear-gradient(
-        170deg,
-        #d00591,
-        #f42
-      );
+    background-image: linear-gradient(170deg, #d00591, #f42);
     width: 100px;
     height: 48px;
     display: flex;
@@ -915,12 +911,7 @@ footer {
   }
 
   .logo-container {
-    background-image:
-      linear-gradient(
-        170deg,
-        #d00591,
-        #f42
-      );
+    background-image: linear-gradient(170deg, #d00591, #f42);
     width: 100px;
     height: 48px;
     display: flex;
@@ -1000,5 +991,19 @@ footer {
     width: 50%;
     padding: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .story-img {
+    width: 320px;
+  }
+
+  .u-row li {
+    width: 23%;
+  }
+
+  .u-row {
+    justify-content: space-between;
   }
 }
